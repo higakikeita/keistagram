@@ -8,7 +8,7 @@
       %strong
       = + like.user.name
       が「いいね！」しました
-    - elsif index > 1
+    - elsif index => 1
       = "and " + (likes.size-index).to_s + " 他 "
       が「いいね！」しました
     - break

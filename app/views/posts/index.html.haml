@@ -23,7 +23,7 @@
           %div{:id => "like-text-post-#{post.id.to_s}"}
             = render "like_text", { likes: post.likes }
           %div
-            %strong 「いいね！」10件
+            %strong= @likes_count
           %div
             %span
               %strong= post.user.name
