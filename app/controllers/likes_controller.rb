@@ -3,10 +3,11 @@ class LikesController < ApplicationController
   def create
     @like = current_user.likes.build(like_params)
     @post = @like.post
+    @likes_count = Like.where(post_id: @post.id).count
     if @like.save
       respond_to :js
     end
-    @likes_count = Like.where(post_id: @post).count
+    
   end
   def destroy
     @like = Like.find_by(id: params[:id])

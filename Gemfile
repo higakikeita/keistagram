@@ -65,7 +65,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
-gem 'pg', group: :production
 gem 'mysql2'
 gem 'haml-rails'
 gem 'erb2haml'
+gem 'rails_12factor'
